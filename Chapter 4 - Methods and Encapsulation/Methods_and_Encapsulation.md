@@ -22,10 +22,10 @@ The method above is a *method declaration* which specifies all of the informatio
 
 
 ## 4 Access Modifiers
-..* **public** - Method can be called from different classees.
-..* **private** - Method can only be called only from within the same class.
-..* **protected** - Method can only be called from classes in the same package or subclasses.
-..* **Default** - Method can only be called from classes in the same package.
+* **public** - Method can be called from different classees.
+* **private** - Method can only be called only from within the same class.
+* **protected** - Method can only be called from classes in the same package or subclasses.
+* **Default** - Method can only be called from classes in the same package.
 
 ## Optional Specifiers
 *static - used for class methods
@@ -68,7 +68,7 @@ From the most restrictive to least: private, default, protected, public
 * *private* - only code in the same class can access methods or fields.
 * default - only code in the same package can access methods or fields.
 * protected - allows code to access members of the parent class as well as default access.
-..* public - allows code to access protected and classes in other packages.
+*.* public - allows code to access protected and classes in other packages.
 
 ## Static Methods and Fields
 The static methods and fields allows access to the the method or field without an instance of the class.
