@@ -66,12 +66,20 @@ public void hello_world(int... start, int end) { } // DOES NOT COMPILE
 From the most restrictive to least: private, default, protected, public
 
 * *private* - only code in the same class can access methods or fields.
-* default - only code in the same package can access methods or fields.
-* protected - allows code to access members of the parent class as well as default access.
-*.* public - allows code to access protected and classes in other packages.
+* *default* - only code in the same package can access methods or fields.
+* *protected* - allows code to access members of the parent class as well as default access.
+* *public* - allows code to access protected and classes in other packages.
 
 ## Static Methods and Fields
 The static methods and fields allows access to the the method or field without an instance of the class.
+
+```
+> Each class has a copy of the instance variables and only one copy of the code for 
+> the instance methods.
+>
+> Each call of an instance method gets space on the stack for method parameters and
+> local variables.
+```
 
 ```Java
 File: Car.java
@@ -109,6 +117,75 @@ public class Car {
         }
 }
 ```
+
+```Java
+// File: Chess.java
+public class Game {
+	public static void game() {
+		System.out.println("Play Chess.");
+	}
+
+	public static void platform() {
+		System.out.println("Checkerboard.");
+	}
+
+	public void powerPlayer() {
+		System.out.println("The Queen");
+	}
+
+	public static void main(String[] args) {
+		Game.game();
+		Game.platform();
+		Game.powerPlayer(); // Compile Error
+	}
+}
+```
+
+## Static Initialization
+* Static initializer runs when the class is first used.
+* A static keyword is used to specify that the could should run first when a class is first used.
+
+
+## Static Imports
+Static imports are for importing static members of classes.
+
+## Passing Data Among Methods
+
+
+## Overloading Methods
+*Method overloading* occurs when there are different method signatures with the same name as the class with different type parameters.
+
+
+## Creating Constructors
+A constructor is a method with the same name as the class without a return type.  When Java identifies the new keyword, memory is allocated for the new object.  Memory is also allocated when a constructor is identified.
+
+*Instanciation* is the process of creating a new instance of a class.
+
+```Java
+public class Car {
+	
+	public Car() {
+		System.out.println("Constructor");
+	}
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
