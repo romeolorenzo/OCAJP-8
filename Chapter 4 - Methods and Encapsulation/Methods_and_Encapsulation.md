@@ -20,6 +20,7 @@ The method above is a *method declaration* which specifies all of the informatio
 | Optional Exception | throws InterruptedException | **No** 
 | Body of Method | { } | **Yes, Can be empty. ** |
 
+
 ## 4 Access Modifiers
 ..* **public** - Method can be called from different classees.
 ..* **private** - Method can only be called only from within the same class.
@@ -64,9 +65,9 @@ public void hello_world(int... start, int end) { } // DOES NOT COMPILE
 ## Applying Access Modifiers
 From the most restrictive to least: private, default, protected, public
 
-..* private - only code in the same class can access methods or fields.
-..* default - only code in the same package can access methods or fields.
-..* protected - allows code to access members of the parent class as well as default access.
+* *private* - only code in the same class can access methods or fields.
+* default - only code in the same package can access methods or fields.
+* protected - allows code to access members of the parent class as well as default access.
 ..* public - allows code to access protected and classes in other packages.
 
 ## Static Methods and Fields
